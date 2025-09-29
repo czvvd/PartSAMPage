@@ -1,1 +1,0 @@
-# PartSAM.github.io

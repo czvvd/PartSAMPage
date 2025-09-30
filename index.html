@@ -222,7 +222,7 @@ This combination of scalable architecture and diverse 3D data yields emergent op
 .generator-img {
   display: block;
   width: 180vw;        
-  max-width:1200px;   /* choose the size */
+  max-width:1000px;   /* choose the size */
   height: auto;
   margin: 0 auto;      
 }
@@ -234,8 +234,8 @@ This combination of scalable architecture and diverse 3D data yields emergent op
   .comparison-wrap{ max-width:1200px; margin:0 auto; }
   .comparison-block{
     display:grid;
-    grid-template-columns: 1.1fr 1.2fr 1fr 1fr; /* Prompt / GIF / Oblique / Topdown */
-    grid-template-rows: auto auto auto;        /* row1: big headers; row2: subheaders; row3: content */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: auto auto auto;      
     gap: 12px 24px;
     margin: 2.25rem 0 3rem;
     align-items:start;
@@ -255,11 +255,11 @@ This combination of scalable architecture and diverse 3D data yields emergent op
 
   .media-frame{
     display:flex; align-items:center; justify-content:center;
-    background:#fff; border:1px solid #e5e7eb; border-radius:10px; padding:8px;
+    background:#fff;  padding:8px;
   }
   .media-frame img{ display:block; max-width:100%; height:auto; }
   .media-frame .gif{ width:100%; height:auto; display:block; }
-  .comparison-wrap{ max-width: 1500px; margin: 0 auto; }
+  .comparison-wrap{ max-width: 1200px; margin: 0 auto; }
 </style>
 
 <style>
@@ -271,8 +271,8 @@ This combination of scalable architecture and diverse 3D data yields emergent op
 </style>
 
 
-<!-- <div class="comparison-wrap">
-<h2 class="title is-3 has-text-centered">Results: Automatic Part Segmentation</h2>
+<div class="comparison-wrap">
+<h2 class="title is-3 has-text-centered">Automatic Segmentation Results on PartObjaverse-Tiny</h2>
   
   <div class="comparison-block">
     <div class="cb-h-prompt">Input</div>
@@ -281,21 +281,115 @@ This combination of scalable architecture and diverse 3D data yields emergent op
     <div class="cb-h-oblique">Results</div>
     
     <div class="cb-gif media-frame">
-      <img class="gif" src="static/layout/generated/scene_bedroom.gif">
+      <img class="gif" src="static/images/gif/bread_input.gif">
     </div>
 
     <div class="cb-gif media-frame">
-      <img class="gif" src="static/layout/generated/scene_bedroom.gif">
+      <img class="gif" src="static/images/gif/bread.gif">
     </div>
 
     <div class="cb-gif media-frame">
-      <img class="gif" src="static/layout/generated/scene_bedroom.gif">
+      <img class="gif" src="static/images/gif/rabbit_input.gif" style="background: transparent;">
     </div>
 
     <div class="cb-gif media-frame">
-      <img class="gif" src="static/layout/generated/scene_bedroom.gif">
+      <img class="gif" src="static/images/gif/rabbit.gif">
     </div>
-  </div> -->
+
+        <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/rocket_input.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/rocket.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/house_input.gif" style="background: transparent;">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/house.gif">
+    </div>
+
+        <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/monster_input.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/monster.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/watch_input.gif" style="background: transparent;">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/watch.gif">
+    </div>
+  </div>
+
+
+
+</div>
+
+<div class="comparison-wrap">
+<h2 class="title is-3 has-text-centered">Automatic Segmentation Results on AI-generated Meshes</h2>
+  
+  <div class="comparison-block">
+    <div class="cb-h-prompt">Input</div>
+    <div class="cb-h-gif">Results</div>
+    <div class="cb-h-retr">Input</div>
+    <div class="cb-h-oblique">Results</div>
+    
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/trans_input.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/trans.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/fake1_input.gif" style="background: transparent;">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/fake1.gif">
+    </div>
+
+        <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/fake2_input.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/fake2.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/knight_input.gif" style="background: transparent;">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/knight.gif">
+    </div>
+
+        <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/crab_input.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/crab.gif">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/ship_input.gif" style="background: transparent;">
+    </div>
+
+    <div class="cb-gif media-frame">
+      <img class="gif" src="static/images/gif/ship.gif">
+    </div>
+  </div>
 
 
 
@@ -332,7 +426,7 @@ This combination of scalable architecture and diverse 3D data yields emergent op
 
     <div class="generator-full">
     <img
-      src="./static/images/automatic2.png"
+      src="./static/images/automatic2.jpg"
       alt="Method Overview"
       class="generator-img"
       loading="eager"
